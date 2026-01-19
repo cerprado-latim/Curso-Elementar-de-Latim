@@ -88,6 +88,30 @@
       display: none;
     }
 
+    /* --- MAGISTER --- */
+
+    .magister-container {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-top: 25px;
+    }
+
+    .magister-photo {
+      width: 180px;
+      border: 1px solid #ccc;
+    }
+
+    @media (max-width: 700px) {
+      .magister-container {
+        flex-direction: column;
+      }
+
+      .magister-photo {
+        width: 160px;
+      }
+    }
+
     footer {
       text-align: center;
       font-size: 0.9em;
@@ -133,18 +157,11 @@
       <p>
         As aulas são <strong>síncronas</strong>, realizadas ao vivo, permitindo que dúvidas sejam
         esclarecidas em tempo real e que o ritmo do curso seja constantemente ajustado às necessidades
-        concretas dos alunos. Aprende-se latim dialogando, perguntando, corrigindo e avançando passo a passo.
+        concretas dos alunos.
       </p>
       <p>
-        Esse contato pessoal permite que o curso não seja um esquema rígido e impessoal.
-        Ao longo do percurso, exemplos, exercícios e leituras podem ser
-        <strong>adaptados à realidade intelectual e aos interesses da turma</strong>.
-      </p>
-      <p>
-        O latim é apresentado não apenas como uma língua, mas como
-        <strong>forma de pensamento</strong>:
-        a língua na qual a cultura ocidental pensou, argumentou, rezou e estruturou
-        seus conceitos fundamentais.
+        O latim é apresentado não apenas como uma língua, mas como <strong>forma mentis</strong>:
+        a língua na qual a cultura ocidental pensou, argumentou, rezou e estruturou seus conceitos fundamentais.
       </p>
       <p>
         Como material complementar, o curso trabalha
@@ -172,7 +189,6 @@
         <li>Aulas numeradas e progressivas</li>
         <li>Materiais de apoio em PDF</li>
         <li>Exercícios online</li>
-        <li>Textos clássicos e cristãos (adaptados)</li>
         <li>Ambiente organizado no Google Classroom</li>
       </ul>
     </section>
@@ -180,7 +196,6 @@
     <!-- Organização -->
     <section>
       <h2>Organização das aulas</h2>
-      <p>Cada aula contém:</p>
       <ul>
         <li>Tema central</li>
         <li>Material de apoio</li>
@@ -215,37 +230,41 @@
     <!-- Magister -->
     <section id="magister" class="hidden">
       <h2>Magister</h2>
-      <p>
-        <strong>Carlos Prado</strong> é professor, com sólida formação acadêmica e trajetória intelectual
-        marcada pela integração entre rigor conceitual, formação humanística e reflexão de longo prazo.
-        Sua atuação docente orienta-se pela convicção de que o ensino verdadeiro exige método,
-        continuidade e presença efetiva do mestre no processo formativo.
-      </p>
-      <p>
-        Doutor em Físico-Química, com formação acadêmica internacional, e mestre em Direito e em Gestão
-        da Navegação Aérea, desenvolveu sua formação em diálogo constante entre diferentes campos do saber,
-        especialmente aqueles ligados à estrutura racional do pensamento, à linguagem e à tradição
-        intelectual ocidental.
-      </p>
-      <p>
-        No campo das línguas clássicas, cursou praticamente todas as disciplinas de
-        <strong>latim e grego clássico</strong> oferecidas pela Faculdade de Letras da
-        <strong>Universidade de Brasília</strong>, dedicando-se ao estudo sistemático dessas línguas como
-        instrumentos privilegiados de acesso às fontes filosóficas, jurídicas e teológicas do Ocidente.
-        O interesse pelo latim surgiu ainda na adolescência e, desde então, o estudo da língua jamais foi
-        interrompido, acompanhando de modo contínuo sua formação intelectual.
-      </p>
-      <p>
-        No ensino do latim, orienta-se pela compreensão de que a língua não deve ser reduzida a um
-        exercício técnico ou meramente instrumental. O latim é apresentado como
-        <strong>forma mentis</strong>, a língua na qual a cultura ocidental pensou, argumentou, rezou e
-        estruturou seus conceitos fundamentais.
-      </p>
-      <p>
-        O método adotado privilegia o <strong>contato direto e contínuo com o aluno</strong>,
-        o esclarecimento de dúvidas em tempo real e a adaptação progressiva do percurso às necessidades
-        concretas da turma, entendendo o aprendizado como um processo vivo, guiado e pessoal.
-      </p>
+
+      <div class="magister-container">
+        <img
+          src="img/magister.png"
+          alt="Carlos Prado, professor do Curso de Latim Elementar"
+          class="magister-photo">
+
+        <div>
+          <p>
+            <strong>Carlos Prado</strong> é professor, com sólida formação acadêmica e trajetória intelectual
+            marcada pela integração entre rigor conceitual, formação humanística e reflexão de longo prazo.
+          </p>
+
+          <p>
+            Doutor em Físico-Química, com formação acadêmica internacional, e mestre em Direito e em Gestão
+            da Navegação Aérea, desenvolveu sua formação em diálogo constante entre diferentes campos do saber.
+          </p>
+
+          <p>
+            Cursou praticamente todas as disciplinas de <strong>latim e grego clássico</strong> oferecidas
+            pela Faculdade de Letras da <strong>Universidade de Brasília</strong>. O interesse pelo latim
+            surgiu ainda na adolescência e, desde então, o estudo da língua jamais foi interrompido.
+          </p>
+
+          <p>
+            No ensino do latim, orienta-se pela compreensão de que a língua não deve ser reduzida a um
+            exercício técnico, mas apresentada como <strong>forma mentis</strong> da cultura ocidental.
+          </p>
+
+          <p>
+            O método adotado privilegia o <strong>contato direto com o aluno</strong>, o esclarecimento
+            de dúvidas em tempo real e a adaptação progressiva do percurso às necessidades concretas da turma.
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer>
