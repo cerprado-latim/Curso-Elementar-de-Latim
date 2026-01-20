@@ -64,8 +64,15 @@
       margin-bottom: 20px;
     }
 
+    /* TEXTO JUSTIFICADO */
+    p {
+      text-align: justify;
+      hyphens: auto;
+    }
+
     ul {
       padding-left: 20px;
+      text-align: left;
     }
 
     li {
@@ -97,7 +104,7 @@
       display: none;
     }
 
-    /* --- MAGISTER --- */
+    /* MAGISTER */
     .magister-container {
       display: flex;
       gap: 30px;
@@ -114,7 +121,6 @@
       .magister-container {
         flex-direction: column;
       }
-
       .magister-photo {
         width: 160px;
       }
@@ -141,138 +147,104 @@
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
 
-    <!-- Cabeçalho -->
-    <header>
-      <h1>Curso de Latim Elementar</h1>
-      <div class="subtitle">Per litteras, ad veritatem.</div>
-    </header>
+<header>
+  <h1>Curso de Latim Elementar</h1>
+  <div class="subtitle">Per litteras, ad veritatem.</div>
+</header>
 
-    <!-- Imagem clássica -->
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/a/a6/IT_Pompeya_0711_067_%2817068938230%29.jpg"
-      alt="Colunas romanas clássicas em Pompeia, fundamento da cultura ocidental"
-      class="hero-image">
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/a/a6/IT_Pompeya_0711_067_%2817068938230%29.jpg"
+  alt="Colunas romanas clássicas em Pompeia"
+  class="hero-image">
 
-    <!-- Apresentação -->
-    <section>
-      <h2>Apresentação do curso</h2>
-      <p>
-        O Curso de Latim Elementar oferece uma introdução sistemática e acessível à língua latina,
-        voltada a iniciantes interessados na tradição clássica e cristã do pensamento ocidental.
-        O curso combina leitura orientada, explicações gramaticais essenciais e exercícios progressivos,
-        sempre com foco na compreensão do texto.
-      </p>
-    </section>
+<section>
+  <h2>Apresentação do curso</h2>
+  <p>
+    O Curso de Latim Elementar oferece uma introdução sistemática e acessível à língua latina,
+    voltada a iniciantes interessados na tradição clássica e cristã do pensamento ocidental.
+    O curso combina leitura orientada, explicações gramaticais essenciais e exercícios progressivos,
+    sempre com foco na compreensão do texto.
+  </p>
+</section>
 
-    <!-- Diferenciais -->
-    <section>
-      <h2>Diferenciais do curso</h2>
-      <p>
-        O Curso de Latim Elementar foi concebido como um percurso formativo guiado, no qual o aprendizado
-        da língua se dá em <strong>contato direto e contínuo entre professor e alunos</strong>.
-      </p>
-      <p>
-        As aulas são <strong>síncronas</strong>, realizadas ao vivo, permitindo que dúvidas sejam
-        esclarecidas em tempo real.
-      </p>
-      <p>
-        O latim é apresentado como <strong>forma mentis</strong> da cultura ocidental,
-        e trabalhado também por meio de textos clássicos e cristãos.
-      </p>
-    </section>
+<section>
+  <h2>Diferenciais do curso</h2>
+  <p>
+    O curso foi concebido como um percurso formativo guiado, no qual o aprendizado da língua
+    se dá em contato direto e contínuo entre professor e alunos.
+  </p>
+  <p>
+    As aulas são síncronas, permitindo esclarecimento de dúvidas em tempo real e adaptação
+    do percurso à realidade concreta da turma.
+  </p>
+  <p>
+    O latim é apresentado como forma mentis da cultura ocidental, também por meio de textos
+    clássicos e cristãos.
+  </p>
+</section>
 
-    <!-- Informações práticas -->
-    <section>
-      <h2>Informações práticas</h2>
-      <p>
-        <strong>Início das aulas:</strong> 12/02/2026<br>
-        <strong>Modalidade:</strong> online (ao vivo)<br>
-        <strong>Plataforma:</strong> Zoom<br>
-        <strong>Dia:</strong> quinta-feira<br>
-        <strong>Horário:</strong> 19h<br><br>
+<section>
+  <h2>Informações práticas</h2>
+  <p>
+    <strong>Início das aulas:</strong> 12/02/2026<br>
+    <strong>Modalidade:</strong> online (ao vivo)<br>
+    <strong>Plataforma:</strong> Zoom<br>
+    <strong>Dia:</strong> quinta-feira<br>
+    <strong>Horário:</strong> 19h<br><br>
+    <strong>Duração do 1º módulo:</strong> 10 meses<br>
+    <strong>Investimento:</strong> R$ 1.800,00 (em até 12 parcelas de R$ 150,00)<br><br>
+    <strong>Acesso aos materiais:</strong> Google Classroom
+  </p>
 
-        <strong>Duração do 1º módulo:</strong> 10 meses<br>
-        <strong>Investimento:</strong> R$ 1.800,00
-        (em até 12 parcelas mensais de R$ 150,00)<br><br>
+  <p class="limited">Vagas limitadas!</p>
 
-        <strong>Acesso aos materiais:</strong> Google Classroom
-      </p>
+  <p class="contact">
+    <strong>Dúvidas?</strong><br>
+    <a href="https://wa.me/5561981725522" target="_blank">
+      👉 Falar com o professor via WhatsApp
+    </a><br>
+    <span style="font-size:0.9em;">
+      Contato destinado exclusivamente a informações sobre o curso.
+    </span>
+  </p>
+</section>
 
-      <p class="limited">
-        Vagas limitadas!
-      </p>
+<div class="buttons">
+  <a href="https://docs.google.com/forms/d/182AusukMMwxKEbK27ergfIDXPeOnlZ0PNBgkqbBdbV4/viewform" target="_blank">
+    Inscreva-se no curso
+  </a>
+  <a href="https://classroom.google.com/c/NzkzMjc3MTAzNjc2" target="_blank">
+    Área do Aluno
+  </a>
+  <a href="javascript:void(0)" onclick="toggleMagister()">
+    Magister
+  </a>
+</div>
 
-      <p class="contact">
-        <strong>Dúvidas?</strong><br>
-        Para esclarecimentos sobre o curso, utilize o link abaixo:<br>
-        <a href="https://wa.me/5561981725522" target="_blank">
-          👉 Falar com o professor via WhatsApp
-        </a><br>
-        <span style="font-size: 0.9em;">
-          Contato destinado exclusivamente a informações sobre o curso.
-        </span>
-      </p>
-    </section>
-
-    <!-- Botões -->
-    <div class="buttons">
-      <a href="https://docs.google.com/forms/d/182AusukMMwxKEbK27ergfIDXPeOnlZ0PNBgkqbBdbV4/viewform"
-         target="_blank">
-        Inscreva-se no curso
-      </a>
-
-      <a href="https://classroom.google.com/c/NzkzMjc3MTAzNjc2"
-         target="_blank">
-        Área do Aluno
-      </a>
-
-      <a href="javascript:void(0)" onclick="toggleMagister()">
-        Magister
-      </a>
-    </div>
-
-    <!-- Magister -->
-    <section id="magister" class="hidden">
-      <h2>Magister</h2>
-
-      <div class="magister-container">
-        <img
-          src="img/magister.png"
-          alt="Carlos Prado, professor do Curso de Latim Elementar"
-          class="magister-photo">
-
-        <div>
-          <p>
-            <strong>Carlos Prado</strong> é professor, com sólida formação acadêmica e dedicação contínua
-            ao estudo do latim desde a adolescência.
-          </p>
-
-          <p>
-            Cursou praticamente todas as disciplinas de <strong>latim e grego clássico</strong> na
-            Faculdade de Letras da <strong>Universidade de Brasília</strong>.
-          </p>
-
-          <p>
-            O método adotado privilegia o acompanhamento pessoal, o diálogo em tempo real
-            e a adaptação do curso à realidade dos alunos.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      © Curso de Latim Elementar — Carlos Prado
-    </footer>
-
+<section id="magister" class="hidden">
+  <h2>Magister</h2>
+  <div class="magister-container">
+    <img src="img/magister.png" class="magister-photo" alt="Carlos Prado">
+    <p>
+      <strong>Carlos Prado</strong> é professor, com dedicação contínua ao estudo do latim
+      desde a adolescência, e formação em latim e grego clássico pela Universidade de Brasília.
+    </p>
   </div>
+</section>
 
-  <script>
-    function toggleMagister() {
-      const section = document.getElementById("magister");
-      section.classList.toggle("hidden");
-    }
-  </script>
+<footer>
+  © Curso de Latim Elementar — Carlos Prado
+</footer>
+
+</div>
+
+<script>
+function toggleMagister() {
+  document.getElementById("magister").classList.toggle("hidden");
+}
+</script>
+
 </body>
 </html>
